@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block title %} INDEX {% endblock %}
+{% block body %}
+<h1>ALL OF THE BOOK</h1>
+<section style="background-color: #eee;">
+    <div class="container py-5">
+      <div class="row">
+        {% for row in book %}
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{row[4]}}" alt="Card image cap" height="400px">
+                <div class="card-body" style="height: 170px;">
+                  <h5 class="card-title " id="book" name="book">{{row[1]}}</h5>
+                  <p class="card-text" id="user" name="user">USER:{{row[5]}}</p>
+                </div>
+                <a href="{{url_for('info',id=row[0])}}" class="btn btn-primary">Read</a>
+              </div>  
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock %} 

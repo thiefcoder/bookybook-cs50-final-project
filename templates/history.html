@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %} book {% endblock %}
+{% block body %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">book name</th>
+        <th scope="col">author</th>
+        <th scope="col">remove</th>
+      </tr>
+    </thead>
+    <tbody>
+        {%for row in data%}
+      <tr>
+        <td>{{row[1]}}</td>
+        <td>{{row[2]}}</td>
+        <td><a href="{{url_for('revbook',id=row[0])}}" class="btn btn-primary" style="background:red;">remove</a></td>        
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %} 
