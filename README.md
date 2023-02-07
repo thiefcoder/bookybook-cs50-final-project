@@ -2,7 +2,7 @@
 #### Video Demo:  https://www.youtube.com/watch?v=6KujqUdU22Q
 #### Description:
 * Hello,I’m Amir i want to thank the CS professors for their diligence.
-* My project is about website that those who read book can rate the book and leave their ideas and comments there.This website were made by mini frim work flask and also uses SQlite and users can make their own account with their selective user name.
+* My project is about website that those who read book can rate the book and leave their ideas and comments there.This website were made by  framework flask and also uses SQlite and users can make their own account with their selective user name.
 * To design my website i inspired from “bootstrap” website.
 * My goal of this project is to introduce books to each other and promote the culture of reading books. Everyone can tell the characteristics of his favorite book in his own language.
 Others should use his experience and be interested in reading that book.
